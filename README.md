@@ -1,26 +1,32 @@
-This file can be used as a template for initializing and running spring projects.
+📌 XMemes — Social Media Backend API
 
-What's included: 
-1. Gradle file created from start.spring.io
-2. Plugins for Spotbugs, Checkstyle and Jacoco included
-3. Other dependencies like Mongo, MySql and redis.
-4. Dockerfile to start mongo server and run the spring boot application within.
+🚀 Overview
 
-Usage - 
+XMemes is a Spring Boot based REST backend that powers a meme sharing social platform. The application supports creation, retrieval, and interaction with memes and comments while demonstrating clean layered architecture, database integration, and production-style API design.
+This project focuses on designing scalable REST endpoints, persistent storage, validation, and exception handling using industry backend patterns.
+________________________________________
 
-1. To build the repository - 
+✨ Key Features
 
-From the repository root, 
+•	Developed REST APIs to create and fetch memes with associated comments 
+•	Implemented layered architecture (Controller → Service → Repository) 
+•	Integrated persistent storage using JPA and relational database 
+•	Added input validation and global exception handling 
+•	Designed endpoints following RESTful conventions and HTTP standards 
+•	Implemented sorting and retrieval based on latest memes 
+•	Structured code for scalability and maintainability 
+________________________________________
 
-1. run `./gradlew build test`run the build
-2. run `./gradlew bootjar` to create executable jar. The jar will be located inside build directories.
+🏗 Architecture Highlights
 
-To run inside docker container, use below commands
+•	Layered architecture for separation of concerns 
+•	DTO based request/response handling 
+•	Centralized exception handling using @ControllerAdvice 
+•	Repository abstraction using Spring Data JPA 
+•	Clean API design with proper status codes and validations 
+•	Modular services for meme and comment management 
+________________________________________
 
-To build docker image, use the command below - `docker build -t your_tag_name  .`
+🛠 Tech Stack
 
-To run the generated container, use this command - `docker run -p8080:8080 your_tag_name`. This will run the server on 8080 port.. You can change the ports as per your needs. 
-
-
-License - 
-While this repository is licensed under APACHE 2.0 license, It is mandatory for users to share the readme.md and License file along with the changes they do in the contents.
+Java • Spring Boot • Spring Data JPA • REST APIs • MySQL • Gradle
